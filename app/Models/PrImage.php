@@ -8,4 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class PrImage extends Model
 {
     use HasFactory;
+    protected $fillable = [
+        'property_id',
+        'property_room_id',
+        'property_image',
+    ];
 }

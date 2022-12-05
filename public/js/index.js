@@ -1,11 +1,14 @@
   
 
+// if (document.readyState == 'loading') {
+//     document.addEventListener('DOMContentLoaded', loaded)
+// } else {
+//     loaded()
+// }
+$(document).ready(function(){
+    $("#viewproperty").modal();
+});
 
-if (document.readyState == 'loading') {
-    document.addEventListener('DOMContentLoaded', loaded)
-} else {
-    loaded()
-}
 function openForm() {
     document.getElementById("popupForm").style.display = "block";
 }

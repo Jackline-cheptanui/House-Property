@@ -19,11 +19,12 @@ class CreatePropertiesTable extends Migration
     {
         Schema::create('properties', function (Blueprint $table) {
             $table->id();
-            $$tabel->string('property_description')->nullable();
+            $table->string('property_description')->nullable();
             $table->string('property_name')->nullable();
             $table->string('property_location')->nullable();
             $table->timestamps();
         });
+        
     }
 
     /**
